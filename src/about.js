@@ -50,8 +50,6 @@ function renderHours(container) {
 
 export function aboutPageLoad() {
     const container = document.querySelector('#content')
-    console.log('page about load');
     renderAddress(container)
     renderHours(container)
-    
 }

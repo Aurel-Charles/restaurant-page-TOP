@@ -1,18 +1,10 @@
 
 import heroImageSrc from "./img/hero.jpg"
+import { heroMaker } from "./utilities.js";
 
-function title(container) {
-    const title = document.createElement('h1')
-    title.textContent = "The Bundle Bistro"
-    title.classList.add('hero-title')
-    container.appendChild(title)
-}
-function heroImage(container) {
-    const img = document.createElement('img')
-    img.src = heroImageSrc
-    img.alt = "The Bundle Bistro-Dinning room view"
-    img.classList.add("hero-image")
-    container.appendChild(img)
+function renderHero(container) {
+    const hero = heroMaker(heroImageSrc, "The Bundle Bistro room view", "The Bundle Bistro")
+    container.appendChild(hero)
 }
 
 function heroDescription(container) {
@@ -46,17 +38,9 @@ function heroDescription(container) {
     container.appendChild(heroDescriptionContainer) 
 }
 
-
-
-
-
 export function homePageload() {
     const container = document.querySelector('#content')
     
-    const heroWrapper = document.createElement('div')
-    heroWrapper.classList.add('heroWrapper')
-    container.appendChild(heroWrapper)
-    heroImage(heroWrapper)
-    title(heroWrapper)
+    renderHero(container)
     heroDescription(container)
 }
