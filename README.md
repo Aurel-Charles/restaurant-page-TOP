@@ -30,4 +30,4 @@ The entire page content is generated dynamically via JavaScript DOM manipulation
 - Organizing code with ES6 `import`/`export`
 - Bundling a project with Webpack
 - Using an external npm library (date-fns)
-- Deploying to GitHub Pages via `git subtree`
+
