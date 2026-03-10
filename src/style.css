@@ -75,10 +75,13 @@
   }
   button{
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.2rem;
     font-size: 1rem;
     background-color: transparen;
     border-radius: 5px;
+    border: none;
+    border-top: solid transparent 2px;
+    border-bottom: solid transparent 2px;
     display: inline-block;
     text-decoration: none;
     background: none;
@@ -89,11 +92,22 @@
     text-shadow: 2px 2px 0px rgba(206,89,55,0.61);
   }
 
+  button:hover{
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+  }
+
   .heroWrapper{
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
-  
+
+  .hero-description{
+    padding: 1rem;
+    background-color: antiquewhite;
+    box-shadow: 4px 4px 0px rgba(206,89,55,0.61);
+  }
+
   .hero-title{
     font-family: "Climate Crisis", sans-serif;
     font-optical-sizing: auto;
@@ -125,23 +139,58 @@
     font-weight: bold;
     text-decoration: underline;
     text-align: center;
+    text-transform: uppercase ;
   }
 
+  .hero-description > h1{
+    text-shadow: 2px 2px 0px rgba(206,89,55,0.61);
+    font-style: italic;
+  }
 
+  .hero-description > .content{
+    text-align: justify;
+    margin: 1rem 0 1rem 0;
+  }
+  
+/* menu  */
 
+  svg{
+    font-size: 1.4rem;
+    place-self: center right;
+    filter: drop-shadow(2px 2px 0px rgba(206,89,55,0.61));
+  }
+  
+  .category{
+    place-self: center left;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(206,89,55,0.61);
+  }
+
+  
   .menu-category{
+    background-color: rgb(252, 247, 240);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     margin: 1rem;
     padding: 1rem;
     border: solid 2px black;
+    border-radius: 10px;
   }
 
   .menu-category > h2 {
     grid-column: 2 / 4;
   }
 
+  .item-wrapper{
+    background-color: antiquewhite;
+    padding: 1rem;
+    box-shadow: 4px 4px 0px rgba(206,89,55,0.61);
+  }
 
+  .item-price{
+    text-shadow: 1px 1px 0px rgba(206,89,55,0.61);
+  }
 
 
   /* about page   */
@@ -168,4 +217,29 @@
     justify-self: end;
     color: rgb(16, 60, 73);
     text-shadow: 2px 2px 0px rgba(206,89,55,0.61);
+  }
+
+  .info-container{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background: #FAEBD7;
+    background: radial-gradient(circle, rgba(250, 235, 215, 1) 32%, rgba(255, 255, 255, 1) 100%);
+  }
+
+  .info-name{
+    font-size: 1.4rem;
+  }
+
+  .info-address, .info-zipcode{
+    font-style: italic;
+  }
+
+  .info-city{
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .today {
+    color: rgb(16, 60, 73);
+    text-shadow: 2px 2px 0px rgba(55, 206, 151, 0.61);
   }
