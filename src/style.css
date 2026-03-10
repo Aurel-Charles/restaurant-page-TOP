@@ -77,7 +77,7 @@
     margin: 1rem;
     padding: 0.2rem;
     font-size: 1rem;
-    background-color: transparen;
+    background-color: transparent;
     border-radius: 5px;
     border: none;
     border-top: solid transparent 2px;
@@ -95,6 +95,11 @@
   button:hover{
     border-top: solid black 2px;
     border-bottom: solid black 2px;
+  }
+
+  button.active{
+    border-top: solid rgba(206,89,55,0.61) 2px;
+    border-bottom: solid rgba(206,89,55,0.61) 2px;
   }
 
   .heroWrapper{
