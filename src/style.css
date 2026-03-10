@@ -257,3 +257,29 @@
     color: rgb(16, 60, 73);
     text-shadow: 2px 2px 0px rgba(55, 206, 151, 0.61);
   }
+
+
+  @media (max-width: 768px) {
+    body{
+      padding: 1rem;
+      margin: 1rem;
+    }
+
+    button{
+      margin: 0.1rem;
+    }
+
+    .hero-title{
+      font-size: 1.7rem;
+    }
+
+    .menu-category{
+      background-color: rgb(252, 247, 240);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hours-container{
+      font-size: 1.2rem;
+    }
+  }
